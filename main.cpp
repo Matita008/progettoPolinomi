@@ -1,10 +1,31 @@
 #include <iostream>
 #include <conio.h>    //necessaria per getch()
 #include <math.h>
+#include <windows.h>
 
 using namespace std;
 
 const int MAX = 3+1;  //Grado del polinomio + termine noto
+
+//Queste funzioni sono qui solo per sempificare la lettura del codice;
+//Servono solo per cambiare il colore degli output futuri.
+//Preso da https://stackoverflow.com/a/63679499 e https://learn.microsoft.com/en-us/windows/console/console-screen-buffers#character-attributes
+//ALL = FOREGROUND_BLUE FOREGROUND_GREEN FOREGROUND_RED FOREGROUND_INTENSITY BACKGROUND_BLUE BACKGROUND_GREEN BACKGROUND_RED BACKGROUND_INTENSITY
+//FOREGROUND testo, INTENSITY più luminoso
+//usare '|' perr combinare
+void resetColor(){
+  SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
+}
+
+void titleColor(){
+  SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_INTENSITY);
+}
+
+void printTitle(string title) {
+  titleColor();
+  cout<<title<<"\n\n";
+  resetColor();
+}
 
 int main() {
   int p1[MAX]; //Primo polinomio
@@ -13,10 +34,12 @@ int main() {
   
   system("title Progetto polinomi");
   
-  //Welcome screen  
+  //Welcome screen
   cout<<"Premere un tasto per iniziare l'inserimento ";
   system("pause >nul");
   system("cls");
+  
+  printTitle("Inserimento polinomi");
   
   //lettura 1° grado
   while(true) { //lo so che si può usare una do-while, ma preferisco così .
