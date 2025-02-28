@@ -21,7 +21,12 @@ void titleColor(){
   SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_INTENSITY);
 }
 
+void errorColor(){
+  SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED);
+}
+
 void printTitle(string title) {
+  system("cls");
   titleColor();
   cout<<title<<"\n\n";
   resetColor();
@@ -37,7 +42,6 @@ int main() {
   //Welcome screen
   cout<<"Premere un tasto per iniziare l'inserimento ";
   system("pause >nul");
-  system("cls");
   
   printTitle("Inserimento polinomi");
   
@@ -46,7 +50,9 @@ int main() {
     cout<<"Grado del 1^ polinomio: ";
     cin>>g1;
     if(g1 > 0 && g1 < MAX) break;
+    errorColor();
     cout<<g1<<" non e' incluso tra 1 e "<<MAX-1<<"\n";
+    resetColor();
   }
   
   for(int i = g1; i>=0; i--){
@@ -55,7 +61,9 @@ int main() {
     else cout<<i<<"^ coefficente: ";
     cin>>p1[i];
     if(i == g1 && p1[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
+      errorColor();
       cout<<"Il primo termine non puo' essere 0, reinseriscilo\n";
+      resetColor();
       i++;
     }
   }
@@ -76,7 +84,9 @@ int main() {
     cout<<"Grado del 2^ polinomio: ";
     cin>>g2;
     if(g2 > 0 && g2 < MAX) break;
+    errorColor();
     cout<<g2<<" non e' incluso tra 1 e "<<MAX-1<<"\n";
+    resetColor();
   }
   
   for(int i = g2; i>=0; i--){
@@ -85,7 +95,9 @@ int main() {
     else cout<<i<<"^ coefficente: ";
     cin>>p2[i];
     if(i == g2 && p2[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
+      errorColor();
       cout<<"Il primo termine non puo' essere 0, reinseriscilo\n";
+      resetColor();
       i++;
     }
   }
@@ -126,10 +138,9 @@ int main() {
         //Aggiungere più testo, è ancora troppo scarno (titolo, spaziature,title)
         break;
       case '1': {
-        system("cls");
+        printTitle("Somma tra polinomi");
         system("title Progetto polinomi - Somma");
-        cout<<"Somma tra polinomi";
-        cout<<"\n\nIl risultato di (";
+        cout<<"Il risultato di (";
         for(int i = g1; i>=0; i--) {  //Stampa polinomio 1
           int n = p1[i];
           if(n == 0) continue;          //Non stampiamo gli zeri
@@ -162,10 +173,9 @@ int main() {
         break;
       }
       case '2': {
-        system("cls");
+        printTitle("Differenza tra polinomi");
         system("title Progetto polinomi - Differenza");
-        cout<<"Differenza tra polinomi";
-        cout<<"\n\nIl risultato di (";
+        cout<<"Il risultato di (";
         for(int i = g1; i>=0; i--) {  //Stampa polinomio 1
           int n = p1[i];
           if(n == 0) continue;          //Non stampiamo gli zeri
