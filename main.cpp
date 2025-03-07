@@ -11,7 +11,7 @@ const int MAX = 3 + 1;  //Grado del polinomio + termine noto
 //Servono solo per cambiare il colore degli output futuri.
 //Preso da https://stackoverflow.com/a/63679499 e https://learn.microsoft.com/en-us/windows/console/console-screen-buffers#character-attributes
 //ALL = FOREGROUND_BLUE FOREGROUND_GREEN FOREGROUND_RED FOREGROUND_INTENSITY BACKGROUND_BLUE BACKGROUND_GREEN BACKGROUND_RED BACKGROUND_INTENSITY
-//FOREGROUND testo, INTENSITY piÃ¹ luminoso
+//FOREGROUND testo, INTENSITY più luminoso
 //usare '|' perr combinare (bitwise or)
 void resetColor() {
   SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
