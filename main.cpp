@@ -46,8 +46,8 @@ int main() {
   
   printTitle("Inserimento polinomi");
   
-  //lettura 1Â° grado
-  while(true) { //lo so che si puÃ² usare una do-while, ma preferisco cosÃ¬ .
+  //lettura 1° grado
+  while(true) { //lo so che si può usare una do-while, ma preferisco così .
     cout << "Grado del 1^ polinomio: ";
     cin >> g1;
     if(g1 > 0 && g1 < MAX) break;
@@ -61,7 +61,7 @@ int main() {
     if(i == 0) cout << "termine noto: ";
     else cout << i << "^ coefficente: ";
     cin >> p1[i];
-    if(i == g1 && p1[i] == 0) { //Se il primo termine Ã¨ 0 lo richiedo poichÃ© Ã¨ impossibile
+    if(i == g1 && p1[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
       errorColor();
       cout << "Il primo termine non puo' essere 0, reinseriscilo\n";
       resetColor();
@@ -73,15 +73,15 @@ int main() {
   for (int i = g1; i >= 0; i--) {
     int n = p1[i];
     if(n == 0) continue;              //Non stampiamo gli zeri
-    if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+    if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
     cout << n;                        //Stampo il coefficente
-    if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+    if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
     cout << " ";                      //Aggiungo uno spazio per separare i vari termini
   }
    
   cout << "\n\n\n"; //separo
-  //lettura 2Â° grado
-  while(true) { //lo so che si puÃ² usare una do-while, ma preferisco cosÃ¬ .
+  //lettura 2° grado
+  while(true) { //lo so che si può usare una do-while, ma preferisco così .
     cout << "Grado del 2^ polinomio: ";
     cin >> g2;
     if(g2 > 0 && g2 < MAX) break;
@@ -95,7 +95,7 @@ int main() {
     if(i == 0) cout << "termine noto: ";
     else cout << i << "^ coefficente: ";
     cin >> p2[i];
-    if(i == g2 && p2[i] == 0) { //Se il primo termine Ã¨ 0 lo richiedo poichÃ© Ã¨ impossibile
+    if(i == g2 && p2[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
       errorColor();
       cout << "Il primo termine non puo' essere 0, reinseriscilo\n";
       resetColor();
@@ -107,9 +107,9 @@ int main() {
   for (int i = g2; i >= 0; i--) {
     int n = p2[i];
     if(n == 0) continue;              //Non stampiamo gli zeri
-    if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+    if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
     cout << n;                        //Stampo il coefficente
-    if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+    if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
     cout << " ";                      //Aggiungo uno spazio per separare i vari termini
   }
    
@@ -140,8 +140,8 @@ int main() {
         system("title Progetto polinomi - Reinserimento");
         printTitle("Inserimento polinomi");
         
-        //lettura 1Â° grado
-        while(true) { //lo so che si puÃ² usare una do-while, ma preferisco cosÃ¬ .
+        //lettura 1° grado
+        while(true) { //lo so che si può usare una do-while, ma preferisco così .
           cout << "Grado del 1^ polinomio: ";
           cin >> g1;
           if(g1 > 0 && g1 < MAX) break;
@@ -155,7 +155,7 @@ int main() {
           if(i == 0) cout << "termine noto: ";
           else cout << i << "^ coefficente: ";
           cin >> p1[i];
-          if(i == g1 && p1[i] == 0) { //Se il primo termine Ã¨ 0 lo richiedo poichÃ© Ã¨ impossibile
+          if(i == g1 && p1[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
             errorColor();
             cout << "Il primo termine non puo' essere 0, reinseriscilo\n";
             resetColor();
@@ -167,15 +167,15 @@ int main() {
         for (int i = g1; i >= 0; i--) {
           int n = p1[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
          
         cout << "\n\n\n"; //separo
-        //lettura 2Â° grado
-        while(true) { //lo so che si puÃ² usare una do-while, ma preferisco cosÃ¬ .
+        //lettura 2° grado
+        while(true) { //lo so che si può usare una do-while, ma preferisco così .
           cout << "Grado del 2^ polinomio: ";
           cin >> g2;
           if(g2 > 0 && g2 < MAX) break;
@@ -189,7 +189,7 @@ int main() {
           if(i == 0) cout << "termine noto: ";
           else cout << i << "^ coefficente: ";
           cin >> p2[i];
-          if(i == g2 && p2[i] == 0) { //Se il primo termine Ã¨ 0 lo richiedo poichÃ© Ã¨ impossibile
+          if(i == g2 && p2[i] == 0) { //Se il primo termine è 0 lo richiedo poiché è impossibile
             errorColor();
             cout << "Il primo termine non puo' essere 0, reinseriscilo\n";
             resetColor();
@@ -201,15 +201,15 @@ int main() {
         for (int i = g2; i >= 0; i--) {
           int n = p2[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
          
         cout << "\n\nPremere un tasto per confermare...";
         system("pause >nul");
-        //Aggiungere piÃ¹ testo, Ã¨ ancora troppo scarno (titolo, spaziature,title)
+        //Aggiungere piÃ¹ testo, è ancora troppo scarno (titolo, spaziature,title)
         break;
       }
       case '1': {
@@ -219,30 +219,30 @@ int main() {
         for (int i = g1; i >= 0; i--) {  //Stampa polinomio 1
           int n = p1[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         cout << ") + (";
         for (int i = g2; i >= 0; i--) {  //Stampa polinomio 2
           int n = p2[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         cout << ") e': ";
         for (int i = max(g1, g2); i >= 0; i--) {
           int n;
-          if(i > g1) n = p2[i];             //Se p1 non ha il grado i la somma Ã¨ il termine di p2
+          if(i > g1) n = p2[i];             //Se p1 non ha il grado i la somma è il termine di p2
           else if(i > g2) n = p1[i];        //Opposto di quello sopra
-          else n = p1[i] + p2[i];           //Altrimenti la somma Ã¨ la somma dei termini dei due polinomi
+          else n = p1[i] + p2[i];           //Altrimenti la somma è la somma dei termini dei due polinomi
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         break;
@@ -254,30 +254,30 @@ int main() {
         for (int i = g1; i >= 0; i--) {  //Stampa polinomio 1
           int n = p1[i];
           if(n == 0) continue;               //Non stampiamo gli zeri
-          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         cout << ") - (";
         for (int i = g2; i >= 0; i--) {  //Stampa polinomio 2
           int n = p2[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         cout << ") e': ";
         for (int i = max(g1, g2); i >= 0; i--) {
           int n;
-          if(i > g1) n = -p2[i];            //Se p1 non ha il grado i la differenza Ã¨ il termine di p2
+          if(i > g1) n = -p2[i];            //Se p1 non ha il grado i la differenza è il termine di p2
           else if(i > g2) n = p1[i];        //Opposto di quello sopra
-          else n = p1[i] - p2[i];           //Altrimenti la differenza Ã¨ la differenza dei termini dei due polinomi
+          else n = p1[i] - p2[i];           //Altrimenti la differenza è la differenza dei termini dei due polinomi
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         break;
@@ -296,9 +296,9 @@ int main() {
         for (int i = g1 + g2; i >= 0; i--) {
           int n = prodotto[i];
           if(n == 0) continue;                   //Non stampiamo gli zeri
-          if(n > 0 && i != g1 + g2) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1 + g2) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                             //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;          //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;          //Se è il termine noto non serve aggiungere x^0
           cout << " ";                           //Aggiungo uno spazio per separare i vari termini
         }
         break;
@@ -344,9 +344,9 @@ int main() {
           int dim = max(g1, g2);
           int n[3];
           for (int i = dim; i >= 0; i--) {
-            if(i > g1) n[i] = -p2[i];           //Se p1 non ha il grado i la differenza Ã¨ il termine di p2
+            if(i > g1) n[i] = -p2[i];           //Se p1 non ha il grado i la differenza è il termine di p2
             else if(i > g2) n[i] = p1[i];       //Opposto di quello sopra
-            else n[i] = p1[i] - p2[i];          //Altrimenti la differenza Ã¨ la differenza dei termini dei due polinomi
+            else n[i] = p1[i] - p2[i];          //Altrimenti la differenza è la differenza dei termini dei due polinomi
           }
           if(dim == 2) {
             float delta = n[1] * n[1] - 4 * n[2] * n[0];
@@ -374,9 +374,9 @@ int main() {
         for (int i = g1; i >= 0; i--) {
           int n = p1[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         
@@ -386,9 +386,9 @@ int main() {
         for (int i = g2; i >= 0; i--) {
           int n = p2[i];
           if(n == 0) continue;              //Non stampiamo gli zeri
-          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se Ã¨ >0 e non Ã¨ il primo termine
+          if(n > 0 && i != g1) cout << "+"; //Aggiungo il + se è >0 e non è il primo termine
           cout << n;                        //Stampo il coefficente
-          if(i != 0) cout << "x^" << i;     //Se Ã¨ il termine noto non serve aggiungere x^0
+          if(i != 0) cout << "x^" << i;     //Se è il termine noto non serve aggiungere x^0
           cout << " ";                      //Aggiungo uno spazio per separare i vari termini
         }
         break;
